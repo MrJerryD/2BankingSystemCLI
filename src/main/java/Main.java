@@ -3,6 +3,7 @@ import entity.Bill;
 import entity.Person;
 import service.DepositService;
 import service.PaymentService;
+import service.TransferService;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,9 +19,12 @@ public class Main {
 //        PaymentService paymentService = new PaymentService();
 //        paymentService.pay(amyAccount, 1000);
 
-        DepositService depositService = new DepositService();
-        depositService.deposit(amyAccount, -2000);
-        depositService.deposit(lilaAccount, 1111);
+//        DepositService depositService = new DepositService();
+//        depositService.deposit(amyAccount, -2000);
+//        depositService.deposit(lilaAccount, 1111);
+
+        TransferService transferService = new TransferService();
+        transferService.transferCash(amyAccount, lilaAccount);
 
     }
 }

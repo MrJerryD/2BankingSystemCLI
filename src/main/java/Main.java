@@ -1,6 +1,7 @@
 import entity.Account;
 import entity.Bill;
 import entity.Person;
+import service.DepositService;
 import service.PaymentService;
 
 public class Main {
@@ -10,12 +11,16 @@ public class Main {
         Bill amyBill = new Bill(1200);
         Account amyAccount = new Account(amy, amyBill);
 
-        Person lila = new Person("Bob", "Tauranga", +123123123);
+        Person lila = new Person("Lila", "Tauranga", +123123123);
         Bill lilaBill = new Bill(700);
         Account lilaAccount = new Account(lila, lilaBill);
 
-        PaymentService paymentService = new PaymentService();
-        paymentService.pay(amyAccount, 1000);
+//        PaymentService paymentService = new PaymentService();
+//        paymentService.pay(amyAccount, 1000);
+
+        DepositService depositService = new DepositService();
+        depositService.deposit(amyAccount, -2000);
+        depositService.deposit(lilaAccount, 1111);
 
     }
 }

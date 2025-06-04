@@ -27,5 +27,5 @@ Clone the repository:
    
 1. Clone the repository:
    ```bash
-   mvn exec:java -Dexec.mainClass="main.Main"
-Or open in IntelliJ IDEA and run main.Main directly.
+   mvn exec:java -Dexec.mainClass="main.main.Main"
+Or open in IntelliJ IDEA and run main.main.Main directly.

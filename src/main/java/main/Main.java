@@ -1,3 +1,5 @@
+package main;
+
 import entity.Account;
 import entity.Bill;
 import entity.Person;

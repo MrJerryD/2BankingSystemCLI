@@ -19,12 +19,12 @@ public class Main {
 //        PaymentService paymentService = new PaymentService();
 //        paymentService.pay(amyAccount, 1000);
 
-//        DepositService depositService = new DepositService();
-//        depositService.deposit(amyAccount, -2000);
-//        depositService.deposit(lilaAccount, 1111);
+        DepositService depositService = new DepositService();
+        depositService.deposit(amyAccount, -10);
+        depositService.deposit(lilaAccount, 1111);
 
-        TransferService transferService = new TransferService();
-        transferService.transferCash(amyAccount, lilaAccount);
+//        TransferService transferService = new TransferService();
+//        transferService.transferCash(amyAccount, lilaAccount);
 
     }
 }

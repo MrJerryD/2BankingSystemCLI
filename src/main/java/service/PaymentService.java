@@ -9,6 +9,15 @@ public class PaymentService {
     private final Logger logger = Logger.getLogger(PaymentService.class.getName());
 
     public void pay(Account account, int amount) {
+        if((account == null) || (account.getBill() == null)) {
+            logger.warning("Account or Bill is null");
+            return;
+        }
+        if(amount <= 0) {
+            logger.warning("Amount must be greater than 0");
+            return;
+        }
+
         Bill bill = account.getBill();
 
         if (bill.getAmount() < amount) {

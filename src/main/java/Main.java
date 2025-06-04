@@ -16,12 +16,13 @@ public class Main {
         Bill lilaBill = new Bill(700);
         Account lilaAccount = new Account(lila, lilaBill);
 
-//        PaymentService paymentService = new PaymentService();
-//        paymentService.pay(amyAccount, 1000);
+        PaymentService paymentService = new PaymentService();
+        paymentService.pay(amyAccount, 1000);
+        paymentService.pay(lilaAccount, 2000);
 
-        DepositService depositService = new DepositService();
-        depositService.deposit(amyAccount, -10);
-        depositService.deposit(lilaAccount, 1111);
+//        DepositService depositService = new DepositService();
+//        depositService.deposit(amyAccount, -10);
+//        depositService.deposit(lilaAccount, 1111);
 
 //        TransferService transferService = new TransferService();
 //        transferService.transferCash(amyAccount, lilaAccount);

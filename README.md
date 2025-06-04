@@ -1,39 +1,31 @@
-# Банковский сервис на Java
+BankingSystemCLI
 
-Простой консольный проект для работы со счетами: пополнение, оплата, перевод.
+A simple command-line banking system written in Java.
 
-## Особенности
+## 📦 Description
 
-- Пополнение счета
-- Оплата с счета
-- Перевод между счетами
-- Логирование через java.util.logging
-- Юнит-тесты с JUnit 5
+This project simulates a basic banking system where users can deposit money, pay from accounts, and transfer cash between accounts. The system updates account balances accordingly and uses logging and unit tests to ensure reliability.
 
-## Требования
+## ✅ Features
 
-- Java 17+
-- Maven
+Deposit money to accounts
+Pay from accounts
+Transfer cash between accounts
+Logging with java.util.logging
+Unit tests with JUnit 5
+## 🛠️ Technologies
 
-## Вариант 1: Через IntelliJ IDEA
+ Java 17+
+IntelliJ IDEA (recommended)
+Maven (optional)
+## ▶️ How to Run
 
-1. Склонируйте репозиторий **-**  Открыть его в IDEA 
-
-## Вариант 2:  Через терминал
-1. Склонируйте репозиторий **-**  mvn exec:java -Dexec.mainClass="main.Main"
-
-## Использование
-
-- После запуска появится меню в консоли. Выбирайте действие и следуйте подсказкам.
-
-## Структура проекта
-
-src/
-├─ main/
-│   ├─ java/
-│   │   ├─ entity/   (модели)
-│   │   ├─ service/  (бизнес-логика)
-│   │   ├─ main/     (точка входа)
-└─ test/
-    ├─ java/
-        ├─ service/  (тесты сервисов)
+Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MrJerryD/2BankingSystemCLI.git
+   
+1. Clone the repository:
+   ```bash
+   mvn exec:java -Dexec.mainClass="main.Main"
+Or open in IntelliJ IDEA and run main.Main directly.
